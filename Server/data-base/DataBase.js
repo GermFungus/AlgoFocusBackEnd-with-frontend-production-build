@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const uri = process.env.dbUrl || "mongodb+srv://kapinjal:00gannakeras@algofocus-zkugd.mongodb.net/test?retryWrites=true&w=majority";
+const uri = process.env.dbUrl;
 const client = new MongoClient(uri, { useNewUrlParser: true  , useUnifiedTopology : true});
 
 var dbconnection =  async () =>{
