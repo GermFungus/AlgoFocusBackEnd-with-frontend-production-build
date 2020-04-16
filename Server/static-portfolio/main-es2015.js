@@ -49,7 +49,7 @@ class ApiparserService {
         this.Router = Router;
     }
     hit(url, method, data, needRaw = false, headers = false) {
-        url = "https://algofocus-assignment.herokuapp.com/" + url;
+        url = "https://algofocus-assignment.herokuapp.com" + url;
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',

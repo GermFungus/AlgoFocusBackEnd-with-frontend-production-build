@@ -92,7 +92,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function hit(url, method, data) {
           var needRaw = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
           var headers = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-          url = "https://algofocus-assignment.herokuapp.com/" + url;
+          url = "https://algofocus-assignment.herokuapp.com" + url;
           var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
               'Content-Type': 'application/json'
