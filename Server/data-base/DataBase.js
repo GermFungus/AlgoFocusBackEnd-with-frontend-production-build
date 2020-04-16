@@ -14,4 +14,11 @@ var dbWrite = async (data) =>{
     return resp;
 }
 
+var dbFetch = async () =>{
+    let collection = await dbconnection();
+    let resp = await collection.find({}).toArray();
+    return resp;
+}
+
 module.exports.dbWrite =  dbWrite ;
+module.exports.dbFetch = dbFetch ;

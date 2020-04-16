@@ -27,4 +27,8 @@ router.post('/register' ,async (req , res , next ) => {
     }
 });
 
+router.get('/data' , async (req , res , next) =>{
+    let data = await DB.dbFetch();
+    res.send(data);
+});
 module.exports = router;
