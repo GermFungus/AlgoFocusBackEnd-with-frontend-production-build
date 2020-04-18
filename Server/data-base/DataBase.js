@@ -20,5 +20,14 @@ var dbFetch = async () =>{
     return resp;
 }
 
+var dbImagestore = async (data , email)=>{
+    let collection = await dbconnection();
+    var myquery = { email: email };
+    var newvalues = { $set: {picUrl: data } };
+    let resp = await collection.updateOne(myquery , newvalues);
+    return resp;
+}
+
 module.exports.dbWrite =  dbWrite ;
 module.exports.dbFetch = dbFetch ;
+module.exports.dbImagestore = dbImagestore ;
