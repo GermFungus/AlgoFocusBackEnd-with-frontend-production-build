@@ -49,7 +49,7 @@ class ApiparserService {
         this.Router = Router;
     }
     hit(url, method, data, needRaw = false, headers = false) {
-        url = "http://localhost:4000" + url;
+        url = "https://algofocus-assignment.herokuapp.com" + url;
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ class ApiparserService {
         return this.parse(this.httpClient[method](url, data, httpOptions).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["timeout"])(60000)), needRaw, headers);
     }
     hitImage(url, method, data, needRaw = false, headers = false) {
-        url = "http://localhost:4000" + url;
+        url = "https://algofocus-assignment.herokuapp.com" + url;
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
